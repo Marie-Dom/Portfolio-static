@@ -1,0 +1,142 @@
+.skills {
+  z-index: 3;
+  padding: 30px;
+  position: relative;
+  height: 80vh;
+  justify-content: center;
+
+  .parallax-skills_img {
+    z-index: -2;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+  }
+
+  .skills_content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.52);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s 0.2s, opacity 0.5s;
+  }
+
+  h2 {
+    margin: 20px 0px;
+  }
+}
+
+.skills_images_flex {
+  margin: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+
+  .skills_images_wrapper {
+    position: relative;
+    transform: translateY(-3em);
+    opacity: 0;
+    transition: all 0.3s 0.5s ease-in-out;
+
+    .skills_images {
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s;
+    }
+
+    p {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      margin-top: 15px;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      .skills_images {
+        transform: scale(1.1);
+      }
+
+      .skills_images_display {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      p {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .skills {
+    h2 {
+      margin: 40px 0px 20px;
+    }
+
+    .skills_content {
+      width: 93%;
+    }
+  }
+  .skills_images_flex {
+    gap: 20px;
+    padding-left: 0px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .skills_images_wrapper {
+      p {
+        position: relative;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .skills {
+    height: auto;
+  }
+  .skills_images_flex {
+    gap: 15px;
+
+    .skills_images_wrapper {
+      .skills_images {
+        height: 85px;
+      }
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills {
+    .skills_content {
+      width: 93%;
+    }
+  }
+  .skills_images_flex {
+    gap: 10px;
+
+    .skills_images_wrapper {
+      .skills_images {
+        height: 65px;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 0.7em;
+      }
+    }
+  }
+}

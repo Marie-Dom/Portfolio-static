@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Marie-Dominique Jaouen - Développeuse web Front-End - Finistère
+    </title>
     <meta
-      name="descriptions"
-      content="Découvrez mon portfolio en tant que développeuse web. Explorez les projets sur lesquels j'ai travaillé et les compétences que j'ai acquises en les réalisant."
+      name="description"
+      content="Développeuse web Front-End du Finistère, Je suis passionnée par mon métier. N'hésitez pas à N'hésitez pas à parcourir mon portfolio, vous y découvrirez quelques projets que j'ai pu réaliser dans le cadre de ma formation."
     />
-    <title>Marie-Dominique Jaouen - Développeuse web</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +25,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--meta X card-->
+    <!-- Schema.org meta for Google+ -->
+    <meta
+      itemprop="name"
+      content="Marie-Dominique Jaouen, developpeuse web Front-end en Finistère"
+    />
+    <meta
+      itemprop="description"
+      content="developpeuse web Front-end du Finistère, vous propose de créer des applications web modernes et durables"
+    />
+    <meta itemprop="image" content="./assets/images/image-for-meta.avif" />
+    <!--meta X card (TWITTER)-->
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -32,20 +44,20 @@
     />
     <meta
       name="twitter:title"
-      content="Marie-Dominique Jaouen - Développeuse Web"
+      content="Marie-Dominique Jaouen - Développeuse Web Front-End - Finistère"
     />
     <meta
       name="twitter:description"
-      content="Découvrez mon portfolio en tant que développeuse web. Explorez les projets sur lesquels j'ai travaillé et les compétences que j'ai acquises en les réalisant."
+      content="Développeuse web Front-End du Finistère, Je suis passionnée par mon métier. N'hésitez pas à N'hésitez pas à parcourir mon portfolio, vous y découvrirez quelques projets que j'ai pu réaliser dans le cadre de ma formation."
     />
-    <meta name="twitter:image" content="./assets/images/image-for-meta.jpg" />
+    <meta name="twitter:image" content="./assets/images/image-for-meta.avif" />
     <!------------------------->
 
-    <!--meta Open graph card-->
+    <!--meta Open graph card (FB)-->
 
     <meta
       property="og:title"
-      content="Marie-Dominique Jaouen - Développeuse Web"
+      content="Marie-Dominique Jaouen - Développeuse Web Front-End - Finistère"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -54,13 +66,28 @@
     />
     <meta
       property="og:image"
-      content="https://Marie-Dom.github.io/Portfolio/assets/images/image-for-meta.jpg"
+      content="https://Marie-Dom.github.io/Portfolio-static/assets/images/image-for-meta.avif"
     />
     <meta property="og:image:height" content="600" />
     <meta property="og:image:width" content="400" />
     <meta
       property="og:description"
-      content="Découvrez mon portfolio en tant que développeuse web. Explorez les projets sur lesquels j'ai travaillé et les compétences que j'ai acquises en les réalisant."
+      content="Développeuse web Front-End du Finistère, Je suis passionnée par mon métier. N'hésitez pas à N'hésitez pas à parcourir mon portfolio, vous y découvrirez quelques projets que j'ai pu réaliser dans le cadre de ma formation."
+    />
+    <!-- Balises meta génériques -->
+    <meta
+      name="description"
+      content="Marie-Dominique Jaouen, développeuse web Front-end - Finistère, vous propose de créer des applications web modernes et durables"
+    />
+    <meta
+      name="keywords"
+      content="développeuse web, Front-end, portfolio, applications web"
+    />
+    <meta name="author" content="Marie-Dominique Jaouen" />
+    <meta name="language" content="fr" />
+    <link
+      rel="canonical"
+      href="https://Marie-Dom.github.io/Portfolio-static/"
     />
     <!------------------------->
   </head>
@@ -72,7 +99,7 @@
       <div class="parallax">
         <img
           src="./assets/images/header-background.avif"
-          alt=""
+          alt="Bord de mer avec un vol de mouettes"
           class="parallax_img"
         />
       </div>
@@ -114,8 +141,8 @@
       <section id="about" class="about">
         <div class="about_content">
           <img
-            src="./assets/images/about-image.avif"
-            alt="Ordinateur portable vu de haut avec divers accessoires disposés autour"
+            src="./assets/images/mockup-kasa.avif"
+            alt="deux ordinateurs de tailles différentes affichant un projet de site web"
             class="about_image"
           />
           <div class="about_text">
@@ -143,9 +170,10 @@
               OpenClassrooms m'a permis de consolider ces bases ainsi que
               d'enrichir mes connaissances pour créer des projets avec
               <span class="about_text_important"
-                >REACT, SASS, NodeJs et Redux</span
+                >REACT, SASS, NodeJs et Redux </span
               >, mais aussi pour organiser et monter des projets avec
-              <span class="about_text_important">méthode de travail AGILE</span
+              <span class="about_text_important"
+                >la méthode de travail AGILE </span
               >, ainsi que
               <span class="about_text_important"
                 >l'optimisation d'un site web pour le SEO.</span
@@ -171,8 +199,7 @@
       <section class="skills" id="skills">
         <div class="parallax-skills">
           <img
-            src="./assets/images/Skills-background.avif
-          "
+            src="./assets/images/Skills-background.avif"
             alt=""
             class="parallax-skills_img"
           />
@@ -507,34 +534,56 @@
           </div>
         </div>
       </section>
-      <section class="contact" id="contact">
-        <div class="contact_content">
-          <a href="mailto:md.friot@gmail.com" class="contact_link">
-            <span class="contact_line"></span>
-            <i class="fa-solid fa-envelope"></i>
-            <p>Mail</p>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/marie-dominique-jaouen-34b999191"
-            class="contact_link"
-            target="_blank"
-          >
-            <span class="contact_line"></span>
-            <i class="fa-brands fa-linkedin"></i>
-            <p>Linkedin</p>
-          </a>
-          <a
-            href="https://github.com/Marie-Dom"
-            class="contact_link"
-            target="_blank"
-          >
-            <span class="contact_line"></span>
-            <i class="fa-brands fa-github"></i>
-            <p>Github</p>
-          </a>
-        </div>
-      </section>
     </main>
-    <script src="script/script.js"></script>
+    <footer class="contact" id="contact">
+      <div class="contact_content">
+        <a href="mailto:md.friot@gmail.com" class="contact_link">
+          <span class="contact_line"></span>
+          <i class="fa-solid fa-envelope"></i>
+          <p>Mail</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/marie-dominique-jaouen-34b999191"
+          class="contact_link"
+          target="_blank"
+        >
+          <span class="contact_line"></span>
+          <i class="fa-brands fa-linkedin"></i>
+          <p>Linkedin</p>
+        </a>
+        <a
+          href="https://github.com/Marie-Dom"
+          class="contact_link"
+          target="_blank"
+        >
+          <span class="contact_line"></span>
+          <i class="fa-brands fa-github"></i>
+          <p>Github</p>
+        </a>
+      </div>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marie-Dominique Jaouen",
+        "description": "Développeuse web Front-end en Finistère"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Marie-Dominique Jaouen",
+        "url": "https://Marie-Dom.github.io/Portfolio-static/",
+        "description": "Développeuse web Front-end en Finistère",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Marie-Dominique Jaouen"
+        }
+      }
+    </script>
+
+    <script src="./assets/javaScript/index.js"></script>
   </body>
 </html>
