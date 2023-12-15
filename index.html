@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="Développeuse web Front-End du Finistère, Je suis passionnée par mon métier. N'hésitez pas à N'hésitez pas à parcourir mon portfolio, vous y découvrirez quelques projets que j'ai pu réaliser dans le cadre de ma formation."
+      content="Développeuse web Front-End du Finistère, Je suis passionnée par mon métier. N'hésitez pas à parcourir mon portfolio, vous y découvrirez quelques projets que j'ai pu réaliser dans le cadre de ma formation."
     />
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
@@ -36,7 +36,6 @@
     />
     <meta itemprop="image" content="./assets/images/image-for-meta.avif" />
     <!--meta X card (TWITTER)-->
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:site"
@@ -51,10 +50,7 @@
       content="Développeuse web Front-End du Finistère, Je suis passionnée par mon métier. N'hésitez pas à N'hésitez pas à parcourir mon portfolio, vous y découvrirez quelques projets que j'ai pu réaliser dans le cadre de ma formation."
     />
     <meta name="twitter:image" content="./assets/images/image-for-meta.avif" />
-    <!------------------------->
-
     <!--meta Open graph card (FB)-->
-
     <meta
       property="og:title"
       content="Marie-Dominique Jaouen - Développeuse Web Front-End - Finistère"
@@ -89,13 +85,12 @@
       rel="canonical"
       href="https://Marie-Dom.github.io/Portfolio-static/"
     />
-    <!------------------------->
   </head>
   <body>
     <a href="#home" aria-label="Retour à l'accueil"
       ><i class="fa-solid fa-angle-up return-home-icon"></i
     ></a>
-    <header id="home">
+    <header id="home" role="banner">
       <div class="parallax">
         <img
           src="./assets/images/header-background.avif"
@@ -105,7 +100,7 @@
       </div>
       <nav class="navbar" aria-label="main-navigation">
         <div class="navbar_elements">
-          <p class="logo"><span>MDJ</span></p>
+          <h4 class="logo"><span>MDJ</span></h4>
           <img
             src="./assets/images/menu-alt-1-svgrepo-com.svg"
             alt=""
@@ -114,19 +109,19 @@
           <div class="navbar_menu">
             <div class="navbar_menu_link">
               <div class="navbar_menu_link_line"></div>
-              <a href="#about">À propos</a>
+              <a href="#about" tabindex="0">À propos</a>
             </div>
             <div class="navbar_menu_link">
               <div class="navbar_menu_link_line"></div>
-              <a href="#skills">Compétences</a>
+              <a href="#skills" tabindex="0">Compétences</a>
             </div>
             <div class="navbar_menu_link">
               <div class="navbar_menu_link_line"></div>
-              <a href="#projects">Projets</a>
+              <a href="#projects" tabindex="0">Projets</a>
             </div>
             <div class="navbar_menu_link">
               <div class="navbar_menu_link_line"></div>
-              <a href="#contact">Contact</a>
+              <a href="#contact" tabindex="0">Contact</a>
             </div>
           </div>
         </div>
@@ -146,7 +141,7 @@
             class="about_image"
           />
           <div class="about_text">
-            <h2>À propos</h2>
+            <h2 tabindex="0">À propos</h2>
             <p>
               Je me présente :
               <span class="about_text_important">Marie-Dominique</span>,
@@ -188,15 +183,17 @@
               quelques projets que j'ai pu réaliser dans le cadre de ma
               formation. Je reste à votre disposition si vous souhaitez en
               savoir plus, n'hésitez pas à
-              <a href="mailto:md.friot@gmail.com" target="_blank"
-                >me contacter</a
+              <a
+                href="#contact"
+                role="lien pointant vers la rubrique contact"
+                tabindex="0"
+                >me contacter !</a
               >
-              !
             </p>
           </div>
         </div>
       </section>
-      <section class="skills" id="skills">
+      <section class="skills" id="skills" aria-label="compétences" tabindex="0">
         <div class="parallax-skills">
           <img
             src="./assets/images/Skills-background.avif"
@@ -274,14 +271,20 @@
           </div>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects" id="projects" aria-label="Projets" tabindex="0">
         <h2>Mes projets</h2>
-
         <div class="card-flex">
           <!-- Ohmyfood card -->
           <div class="card">
             <div class="card_frontside">
-              <h3 class="card_title">Ohmyfood</h3>
+              <h3
+                role="titre du projet"
+                aria-label="Ohmyfood"
+                class="card_title"
+                tabindex="0"
+              >
+                Ohmyfood
+              </h3>
               <i class="fa-solid fa-caret-right card_frontside_flip_button"></i>
               <span class="card_frontside_lines card_line_top"></span>
               <div class="card_img">
@@ -292,7 +295,7 @@
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside">
+            <div class="card_backside" role="back of card" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
@@ -321,24 +324,34 @@
                 </p>
                 <div class="card_backside_buttons">
                   <a
+                    role="lien pointant vers le repository GitHub"
                     href="https://github.com/Marie-Dom/Project4"
                     target="_blank"
+                    tabindex="0"
                     ><button>Voir le code</button></a
                   >
                   <a
+                    role="lien pointant vers le site github"
                     href="https://marie-dom.github.io/Project4/"
                     target="_blank"
+                    tabindex="0"
                     ><button>Voir le site</button></a
                   >
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Sophie Bluel card -->
           <div class="card">
             <div class="card_frontside">
-              <h3 class="card_title">Sophie Bluel</h3>
+              <h3
+                role="titre du projet"
+                aria-label="Sophie Bluel"
+                class="card_title"
+                tabindex="0"
+              >
+                Sophie Bluel
+              </h3>
               <i class="fa-solid fa-caret-right card_frontside_flip_button"></i>
               <span class="card_frontside_lines card_line_top"></span>
               <div class="card_img">
@@ -349,7 +362,7 @@
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside">
+            <div class="card_backside" role="back of card" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
@@ -380,16 +393,24 @@
                   <a
                     href="https://github.com/Marie-Dom/Portfolio-architecte-sophie-bluel"
                     target="_blank"
+                    role="lien pointant vers le repository GitHub"
+                    tabindex="0"
                     ><button>Voir le code</button></a
                   >
                 </div>
               </div>
             </div>
           </div>
-
           <div class="card">
             <div class="card_frontside">
-              <h3 class="card_title">Nina Carducci</h3>
+              <h3
+                role="titre du projet"
+                aria-label="Nina Carducci"
+                class="card_title"
+                tabindex="0"
+              >
+                Nina Carducci photographe
+              </h3>
               <i class="fa-solid fa-caret-right card_frontside_flip_button"></i>
               <span class="card_frontside_lines card_line_top"></span>
               <div class="card_img">
@@ -419,26 +440,40 @@
                   et ajout de méta pour les réseaux sociaux. Amélioration du SEO
                   et de l'accessibilité avec Lighthouse et Wave.
                 </p>
-                <div class="card_backside_buttons">
+                <div
+                  class="card_backside_buttons"
+                  role="back of card"
+                  tabindex="0"
+                >
                   <a
                     href="https://github.com/Marie-Dom/ninacarducci.github.io"
                     target="_blank"
+                    role="lien pointant vers le repository GitHub"
+                    tabindex="0"
                     ><button>Voir le code</button></a
                   >
                   <a
                     href="https://marie-dom.github.io/ninacarducci.github.io/"
                     target="_blank"
+                    role="lien pointant vers le site"
+                    tabindex="0"
                     ><button>Voir le site</button></a
                   >
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Kasa's card -->
           <div class="card">
             <div class="card_frontside">
-              <h3 class="card_title">Kasa</h3>
+              <h3
+                role="titre du projet"
+                aria-label="Kasa"
+                class="card_title"
+                tabindex="0"
+              >
+                Kasa
+              </h3>
               <i class="fa-solid fa-caret-right card_frontside_flip_button"></i>
               <span class="card_frontside_lines card_line_top"></span>
               <div class="card_img">
@@ -449,7 +484,7 @@
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside">
+            <div class="card_backside" role="back of card" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
@@ -472,18 +507,28 @@
                   de chaque logement.
                 </p>
                 <div class="card_backside_buttons">
-                  <a href="https://github.com/Marie-Dom/kasa" target="_blank"
+                  <a
+                    href="https://github.com/Marie-Dom/kasa"
+                    target="_blank"
+                    role="lien pointant vers le repository GitHub"
+                    tabindex="0"
                     ><button>Voir le code</button></a
                   >
                 </div>
               </div>
             </div>
           </div>
-
           <!-- ArgentBank's card -->
           <div class="card">
             <div class="card_frontside">
-              <h3 class="card_title">ArgentBank</h3>
+              <h3
+                role="titre du projet"
+                aria-label="ArgentBank"
+                class="card_title"
+                tabindex="0"
+              >
+                ArgentBank
+              </h3>
               <i class="fa-solid fa-caret-right card_frontside_flip_button"></i>
               <span class="card_frontside_lines card_line_top"></span>
               <div class="card_img">
@@ -495,7 +540,7 @@
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside">
+            <div class="card_backside" role="back of card" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
@@ -526,6 +571,8 @@
                   <a
                     href="https://github.com/Marie-Dom/ArgentBank-website"
                     target="_blank"
+                    role="lien pointant vers le repository GitHub"
+                    tabindex="0"
                     ><button>Voir le code</button></a
                   >
                 </div>
@@ -535,32 +582,43 @@
         </div>
       </section>
     </main>
-    <footer class="contact" id="contact">
-      <div class="contact_content">
-        <a href="mailto:md.friot@gmail.com" class="contact_link">
-          <span class="contact_line"></span>
-          <i class="fa-solid fa-envelope"></i>
-          <p>Mail</p>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/marie-dominique-jaouen-34b999191"
-          class="contact_link"
-          target="_blank"
-        >
-          <span class="contact_line"></span>
-          <i class="fa-brands fa-linkedin"></i>
-          <p>Linkedin</p>
-        </a>
-        <a
-          href="https://github.com/Marie-Dom"
-          class="contact_link"
-          target="_blank"
-        >
-          <span class="contact_line"></span>
-          <i class="fa-brands fa-github"></i>
-          <p>Github</p>
-        </a>
-      </div>
+    <footer>
+      <section aria-label="contact" class="contact" id="contact" tabindex="0">
+        <div class="contact_content">
+          <a
+            href="mailto:md.friot@gmail.com"
+            class="contact_link"
+            tabindex="0"
+            aria-label="lien pour m'envoyer un mail"
+          >
+            <span class="contact_line"></span>
+            <i class="fa-solid fa-envelope"></i>
+            <p>Mail</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marie-dominique-jaouen-34b999191"
+            class="contact_link"
+            target="_blank"
+            tabindex="0"
+            aria-label="lien vers linkedin"
+          >
+            <span class="contact_line"></span>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>Linkedin</p>
+          </a>
+          <a
+            href="https://github.com/Marie-Dom"
+            class="contact_link"
+            target="_blank"
+            tabindex="0"
+            aria-label="lien vers mon repository GitHub"
+          >
+            <span class="contact_line"></span>
+            <i class="fa-brands fa-github"></i>
+            <p>Github</p>
+          </a>
+        </div>
+      </section>
     </footer>
     <script type="application/ld+json">
       {
