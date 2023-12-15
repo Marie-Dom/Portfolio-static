@@ -15,10 +15,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Allura&family=Balsamiq+Sans:wght@700&family=Caveat:wght@500&family=Comfortaa:wght@300;500;600;700&family=Dancing+Script:wght@500&family=Great+Vibes&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
     <link
+      async
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -197,6 +200,8 @@
         <div class="parallax-skills">
           <img
             src="./assets/images/Skills-background.avif"
+            width="1200px"
+            height="800px"
             alt=""
             class="parallax-skills_img"
           />
@@ -207,6 +212,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/html5.avif"
+                width="800px"
+                height="755px"
                 alt="logo de HTML5"
                 class="skills_images"
               />
@@ -215,6 +222,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/css3.avif"
+                width="500px"
+                height="468px"
                 alt="logo de CSS3"
                 class="skills_images"
               />
@@ -223,6 +232,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/sass.avif"
+                width="500px"
+                height="482px"
                 alt="logo de Sass"
                 class="skills_images"
               />
@@ -231,6 +242,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/javascript.avif"
+                width="582px"
+                height="546px"
                 alt="logo de JavaScript"
                 class="skills_images"
               />
@@ -239,6 +252,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/react.png"
+                width="151px"
+                height="147px"
                 alt="logo de React"
                 class="skills_images"
               />
@@ -247,6 +262,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/redux.avif"
+                width="800px"
+                height="800px"
                 alt="logo de Redux"
                 class="skills_images"
               />
@@ -255,6 +272,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/github.png"
+                width="401px"
+                height="392px"
                 alt="logo de Github"
                 class="skills_images"
               />
@@ -263,6 +282,8 @@
             <div class="skills_images_wrapper">
               <img
                 src="./assets/images/software logo/swagger.avif"
+                width="261px"
+                height="267px"
                 alt="logo de Swagger"
                 class="skills_images"
               />
@@ -290,26 +311,34 @@
               <div class="card_img">
                 <img
                   src="./assets/images/Project/ohmyfood-banner.avif"
+                  width="800px"
+                  height="609px"
                   alt="Un plat de nourriture sur une table de restaurant"
                 />
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside" role="back of card" tabindex="0">
+            <div class="card_backside" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
                   <img
                     src="./assets/images/software logo/html5.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de HTML5"
                     class="card_backside_icon"
                   /><img
                     src="./assets/images/software logo/css3.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de CSS3"
                     class="card_backside_icon"
                   />
                   <img
                     src="./assets/images/software logo/sass.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de Sass"
                     class="card_backside_icon"
                   />
@@ -324,14 +353,14 @@
                 </p>
                 <div class="card_backside_buttons">
                   <a
-                    role="lien pointant vers le repository GitHub"
+                    role="link"
                     href="https://github.com/Marie-Dom/Project4"
                     target="_blank"
                     tabindex="0"
                     ><button>Voir le code</button></a
                   >
                   <a
-                    role="lien pointant vers le site github"
+                    role="link"
                     href="https://marie-dom.github.io/Project4/"
                     target="_blank"
                     tabindex="0"
@@ -357,26 +386,34 @@
               <div class="card_img">
                 <img
                   src="./assets/images/Project/sophie-bluel-banner.avif"
+                  width="948px"
+                  height="710px"
                   alt="Portait d'une femme entourée de verdure"
                 />
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside" role="back of card" tabindex="0">
+            <div class="card_backside" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
                   <img
                     src="./assets/images/software logo/html5.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de HTML5"
                     class="card_backside_icon"
                   /><img
                     src="./assets/images/software logo/css3.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de CSS3"
                     class="card_backside_icon"
                   />
                   <img
                     src="./assets/images/software logo/javascript.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de Javascript"
                     class="card_backside_icon"
                   />
@@ -393,7 +430,7 @@
                   <a
                     href="https://github.com/Marie-Dom/Portfolio-architecte-sophie-bluel"
                     target="_blank"
-                    role="lien pointant vers le repository GitHub"
+                    role="link"
                     tabindex="0"
                     ><button>Voir le code</button></a
                   >
@@ -416,6 +453,8 @@
               <div class="card_img">
                 <img
                   src="./assets/images/Project/nina-carducci-banner.avif"
+                  width="1800px"
+                  height="1796px"
                   alt="Appareil photo, une lumière rouge reflète sur l'appareil"
                 />
               </div>
@@ -427,6 +466,8 @@
                 <div class="card_backside_icons">
                   <img
                     src="./assets/images/software logo/seo.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo représentant le SEO"
                     class="card_backside_icon"
                   />
@@ -440,22 +481,18 @@
                   et ajout de méta pour les réseaux sociaux. Amélioration du SEO
                   et de l'accessibilité avec Lighthouse et Wave.
                 </p>
-                <div
-                  class="card_backside_buttons"
-                  role="back of card"
-                  tabindex="0"
-                >
+                <div class="card_backside_buttons" tabindex="0">
                   <a
                     href="https://github.com/Marie-Dom/ninacarducci.github.io"
                     target="_blank"
-                    role="lien pointant vers le repository GitHub"
+                    role="link"
                     tabindex="0"
                     ><button>Voir le code</button></a
                   >
                   <a
                     href="https://marie-dom.github.io/ninacarducci.github.io/"
                     target="_blank"
-                    role="lien pointant vers le site"
+                    role="link"
                     tabindex="0"
                     ><button>Voir le site</button></a
                   >
@@ -479,22 +516,28 @@
               <div class="card_img">
                 <img
                   src="./assets/images/Project/kasa-banner.avif"
+                  width="800px"
+                  height="534px"
                   alt="Salon moderne et confortable"
                 />
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside" role="back of card" tabindex="0">
+            <div class="card_backside" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
                   <img
                     src="./assets/images/software logo/react.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de React"
                     class="card_backside_icon"
                   />
                   <img
                     src="./assets/images/software logo/sass.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de Sass"
                     class="card_backside_icon"
                   />
@@ -510,7 +553,7 @@
                   <a
                     href="https://github.com/Marie-Dom/kasa"
                     target="_blank"
-                    role="lien pointant vers le repository GitHub"
+                    role="link"
                     tabindex="0"
                     ><button>Voir le code</button></a
                   >
@@ -533,29 +576,36 @@
               <span class="card_frontside_lines card_line_top"></span>
               <div class="card_img">
                 <img
-                  src="./assets/images/Project/argentbank-banner.avif
-                  "
+                  src="./assets/images/Project/argentbank-banner.avif"
+                  width="900px"
+                  height="600px"
                   alt="Jeune plante poussant dans un verre rempli de pièces de monnaies"
                 />
               </div>
               <span class="card_frontside_lines card_line_bottom"></span>
             </div>
-            <div class="card_backside" role="back of card" tabindex="0">
+            <div class="card_backside" tabindex="0">
               <i class="fa-solid fa-caret-left card_backside_flip_button"></i>
               <div class="card_backside_content">
                 <div class="card_backside_icons">
                   <img
                     src="./assets/images/software logo/react.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de React"
                     class="card_backside_icon"
                   />
                   <img
                     src="./assets/images/software logo/redux.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de Redux"
                     class="card_backside_icon"
                   />
                   <img
                     src="./assets/images/software logo/swagger.svg"
+                    width="800px"
+                    height="800px"
                     alt="Logo de Swagger"
                     class="card_backside_icon"
                   />
@@ -571,7 +621,7 @@
                   <a
                     href="https://github.com/Marie-Dom/ArgentBank-website"
                     target="_blank"
-                    role="lien pointant vers le repository GitHub"
+                    role="link"
                     tabindex="0"
                     ><button>Voir le code</button></a
                   >
@@ -589,7 +639,7 @@
             href="mailto:md.friot@gmail.com"
             class="contact_link"
             tabindex="0"
-            aria-label="lien pour m'envoyer un mail"
+            aria-label="link for sending mail"
           >
             <span class="contact_line"></span>
             <i class="fa-solid fa-envelope"></i>
